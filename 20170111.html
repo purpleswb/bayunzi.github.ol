@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>沈文彬的总结</title>
+</head>
+<style type="text/css">
+*{margin:0px;padding:0px; }
+#div{width=400px;height=100px;margin:0 auto;}
+ul{list-style: none;}
+a{text-decoration: none;color: black;}
+.a{width: 800px;background-color:beige;margin-bottom: 30px;}
+.b{font-weight: bold;font-size: 20px;margin-top: 20px;margin-bottom: 20px;}
+</style>
+<body>
+<div id="box"> 
+<h1>20170111总结</h1>
+</div>
+<h1>JS复习</h1>
+    <div>
+    	<h2>构造函数</h2>
+    	<p>可以简单的理解为new关键字后面的函数</p>
+        <p>函数命名建议首字母大写</p>       
+    </div>
+    <div>
+    	<h2>特点</h2>
+    	<p>用new关键字调用</p>
+        <p>没有显示的创建对象</p>
+        <p>函数内部可以使用this关键字</p>
+        <p>this指向的是构造出的新对象</p>
+        <p>直接将属性和方法赋给this</p>
+        <p>默认不用return返回值</p>
+        <p>默认会返回this，也就是新的实例对象</p>
+        <p>return返回Object类型时，返回的不是this，所有值类型均返回this</p>
+    </div>
+    <div>
+    	<h2>过程</h2>
+    	<p>将构造函数的this指向实例</p>
+        <p>将实例的_proto_属性指向构造函数的prototype,创建原型与对象关联</p>
+        <p>执行构造函数内部的函数代码或将构造函数的代码复制一个拷贝到实例</p>
+      
+    </div> 
+    <div>
+    	<h2>原型对象与实例对象</h2>
+    	<p>在javascript中，每个对象都有一个与之相关联的对象，那就是它的原型对象</p>
+        <p>类的所有实例对象都从它的原型对象上继承属性</p>
+        <p>当且仅当两个对象继承自同一个原型对象时，它们才是属于同一个类的实例</p> 
+        <p>构造函数拥有一个prototype属性，指向原型</p>
+        <p>也就是一个对象的原型就是它的构造函数的prototype属性的值</p> 
+        <p>当一个函数被定义的时候，它会自动创建和初始化prototype值</p>
+    </div> 
+</body>
+
+</html>
