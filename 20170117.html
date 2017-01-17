@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>沈文彬的总结</title>
+</head>
+<style type="text/css">
+*{margin:0px;padding:0px; }
+#div{width=400px;height=100px;margin:0 auto;}
+ul{list-style: none;}
+a{text-decoration: none;color: black;}
+.a{width: 800px;background-color:beige;margin-bottom: 30px;}
+.b{font-weight: bold;font-size: 20px;margin-top: 20px;margin-bottom: 20px;}
+</style>
+<body>
+<div id="box"> 
+<h1>20170117总结</h1>
+</div>
+<h1>使用 JavaScript 控制 Audio 对象</h1>
+    <div>
+    	<h2>在 JavaScript 中播放和暂停音频播放</h2>
+    	<p>使用 HTML5 audio 元素入门中所述的 HTML5 audio 元素可向网页中添加音频，而无需使用外部控件或程序。但是，除非</p>  
+    	<p>你的网页只需要一个简单的音频播放器，否则你很可能想对加载的音频文件及其播放拥有更多的控制。若要将 audio 元素与</p>
+        <p>JavaScript 结合使用，请定义 audio 标记，该标记具有 "ID" 并且可以选择省略其他所有内容。如 HTML5 audio 元素入门</p>
+        <p>中所述，你可以显示或隐藏内置控件，或将音频设置为在页面加载时自动播放。使用 JavaScript，你仍然可以执行该操作并</p>
+        <p>且还可以执行进一步操作。</p>
+    </div>
+    <div>
+    	<h2>在 JavaScript 中指定音频文件并管理播放</h2>
+    	<p>当音频文件正在播放时，currentTime 属性会跟踪播放在音频剪辑中的位置。通过更改 currentTime 的值，你可以快进或</p>
+        <p>快退或重新启动播放。该示例包括三个用于调用 rewindAudio、forwardAudio 和 restartAudio 函数的新按钮。</p> 
+        <p>rewindAudio 和 forwardAudio 函数将 currentTime 的值减少或增加 30 秒。你可以将增量值更改为更大或更小的跳跃</p>
+        <p>幅度。在 restartAudio 函数中，currentTime 的值设置为零，即表示文件的开头。</p>
+    </div>
+    <div>
+    	<h2>缓存错误</h2>
+    	<p>HTML 语言有一个特点，如果无法识别某个标记，则会将其忽略。在不支持 HTML5 的浏览器中，当使用 HTML5 audio 元</p>
+        <p>素时，如果无法识别该元素，则使用标记之间的部分。</p>
+        <p>如果支持 HTML5 音频，则可能会发生其他错误。Try/catch 语句与可以引发异常的方法结合使用。异常的原因可能是，用</p>
+        <p>户尝试播放不存在的文件、在未加载文件时后退或无法连接文件。</p>
+        <p>使用 Try/catch 语句，这些条件将会失败，但不会进行提示，但是如果在 Internet Explorer 9 F12 工具中打开“控制台”或</p> 
+        <p>“脚本”选项卡，则可以看到这些错误。例如，如果未播放或加载任何音频文件，则 Fast Forward、Rewind 和 Restart</p>
+        <p>函数会引发 "InvalidStateError" DOMExceptions。</p>
+    </div> 
+  
+</body>
+
+</html>
