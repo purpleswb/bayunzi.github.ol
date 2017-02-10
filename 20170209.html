@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>沈文彬的总结</title>
+</head>
+<style type="text/css">
+*{margin:0px;padding:0px; }
+#div{width=400px;height=100px;margin:0 auto;}
+ul{list-style: none;}
+a{text-decoration: none;color: black;}
+.a{width: 800px;background-color:beige;margin-bottom: 30px;}
+.b{font-weight: bold;font-size: 20px;margin-top: 20px;margin-bottom: 20px;}
+#c{width: 600px;}
+</style>
+<body>
+<div id="box"> 
+<h1>20170207总结</h1>
+</div>
+<h1>Event</h1>
+    <div>
+    	<h2>Event Model</h2>
+    	<p>捕获阶段-Event Capturing允许多个元素响应单击事件的一种策略叫做事件捕获。在事件捕获的过程中，事件首先会交给最外层的元素，接着再交给更具体的元素。</p>  
+    	<p>冒泡阶段-Event Bubbling与捕获事件相反，即当事件发生时，会首先发送给最具体的元素，在这个元素获得响应机会之后，事件会向上冒泡到更一般的元素</p>
+        <p>DOM开发者们最初采用的是不同的事件传播模型。DOM标准规定应该同时使用这两种策略：首先，事件要从一般到具体进行捕获，然后事件再过冒泡返回DOM树的顶层。而事件处理程序可以注册到这个过程中的任何一部分。</p>
+        <p>注意并不是所有的浏览器都为了与新标准保持一致而进行了更新。对于那些支持捕获的浏览器来说，通常必须明确启用才行。为了提供跨浏览器的一致性，jQuery始终在模型的冒泡阶段注册处理程序。因此，我们总是可以假定最具体的元素会首先获得响应事件的机会</p>
+    </div>
+    <div>
+    	<h2>事件分类</h2>
+    	<p>与浏览器相关ready  scroll  resize </p>
+    	<p>鼠标相关click  dblclick  hover  blur focus focusin  focusout  mousedown,mousemove,mouseout,mouseover,mouseup </p>
+    	<p>键盘相关keydown,keypress,keyup </p>
+        <h2>事件处理</h2>
+    	<p>on()方法为所有当前的 − 以及之后的 − 匹配元素将一个处理程序捆绑到一个事件上(如点击)。 也可以捆绑自定义事件。 </p>
+        <p>bind()方法为每个匹配的元素将一个处理程序捆绑到一个或多个事件上(如点击)。也可以捆绑自定义事件</p>
+        <p>one()方法为每个匹配的元素将一个处理程序绑定到一个或多个要被执行的事件上</p>
+        <p>hover(over, out)方法模拟徘徊，例如将鼠标移动到一个对象上，并将鼠标从该对象上移开</p>
+        <p>trigger()方法触发被选元素的指定事件类型</p>
+        <p>live()方法-注意版本支持该方法为整个页面生命周期内的某一类对象绑定一个事件处理程序</p>
+        <p>unbind()方法该方法实现绑定相反的操作，它从每个匹配的元素中删除绑定的事件</p>
+        <p>off()方法该方法实现的是 live 的对立面，它删除了捆绑的 live 事件</p>
+        <p>die方法与live方法对应，用于解除用live注册的自定义事件 ， type用于指定要删除的事件类型，fn用于指定要删除的事件处理程序的名称</p>
+</div>
+  
+</body>
+
+</html>
