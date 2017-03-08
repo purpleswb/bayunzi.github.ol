@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>沈文彬的总结</title>
+	<!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/boots b`	trap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+<!-- 可选的 Bootstrap 主题文件（一般不用引入） -->
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	</head>
+<style type="text/css">
+*{margin:0px;padding:0px; }
+#div{width=400px;height=100px;margin:0 auto;}
+ul{list-style: none;}
+a{text-decoration: none;color: black;}
+.a{width: 800px;background-color:beige;margin-bottom: 30px;}
+.b{font-weight: bold;font-size: 20px;margin-top: 20px;margin-bottom: 20px;}
+#c{width: 600px;}. 
+                                 
+</style>
+<body>
+<div id="box"> 
+<h1>20170306总结</h1>
+</div>
+<h1>CSS3</h1>
+   <div id = "box">
+    <h1 id="Tit">Bootstrap</strong>
+   	<h3>布局容器</h3><br/>
+   	<ul>
+   		<li><h4>.container<small>用于固定宽度并支持响应式布局的容器</small></h4></li><br>
+   		<li><h4>.container-fluid<small>用于100%的宽度，占据全部视口(viewport)的容器</small></h4></li><br>
+   	</ul>
+   	<h3>栅格系统</h3><br/>
+   	<em>用于通过一系列的行（row）与列（column）的组合来创建页面布局。随着屏幕或视口尺寸的增加，系统会自动分成最多12列</em>
+   	<ul>
+   		<li><h4>.row(行)<small>必须包含在.container或.container-fluid中</small></h4></li><br>
+   		<li><h4>.col(列)</h4><br />
+   			<ul>
+   				<strong>指定响应宽度及响应断点</strong>
+   				<li><p>.col-xs-*</p></li>
+   				<li><p>.col-sm-*</p></li>
+   				<li><p>.col-md-*</p></li>
+   				<li><p>.col-lg-*</p></li>
+   			</ul>
+   			<ul>
+   				<strong>列偏移</strong>
+   				<li><p>.col-xs-offset-*</p></li>
+   				<li><p>.col-sm-offset-*</p></li>
+   				<li><p>.col-md-offset-*</p></li>
+   				<li><p>.col-lg-offset-*</p></li>
+   			</ul>
+   			
+   			<ul>
+   				<strong>列排序</strong>
+   				<li><p>.col-xs-push-*</p></li>
+   				<li><p>.col-sm-push-*</p></li>
+   				<li><p>.col-md-push-*</p></li>
+   				<li><p>.col-lg-push-*</p></li><br>
+   				<li><p>.col-xs-pull-*</p></li>
+   				<li><p>.col-sm-pull-*</p></li>
+   				<li><p>.col-md-pull-*</p></li>
+   				<li><p>.col-lg-pull-*</p></li>
+   			</ul>
+   			<ul>
+   				<strong>清除浮动</strong>
+   				<li><p>.clearfix</p></li>
+   			</ul>
+   			</li><br>
+   	</ul>
+   	
+   	<h3>排版</h3><br/>
+   	<ul>
+   		<li><h4>标题<small>h1至h6均可使用，还提供了.h1至.h6类。还可以包含small标签或赋予.small类的元素用来标记副标题。</small></h4></li><br> 
+   		<div class="container">
+			<h1>标题1<small>副标题</small></h1>
+			<h2>标题2<small>副标题</small></h2>
+			<h3>标题3<small>副标题</small></h3>
+			<h4>标题4<small>副标题</small></h4>
+			<h5>标题5<small>副标题</small></h5>
+			<h6>标题6<small>副标题</small></h6>
+		</div>
+   		<li>
+   			<h4>页面主体</h4><br>
+   			<b>Bootstrap将全局font-size设置为14px,line-height设置为1.428 这些属性直接赋予body元素和所有段落元素,另外p标签还被设置了1/2的行高(即10px)的底部外边距margin</b>
+   			<ul>
+   				<li><h4>中心内容<small>通过添加.lead类可以让段落突出显示</small></h4></li>
+   			</ul>
+   			<h4>内联文本元素</h4><br>
+   			<ul>
+   				<li><h4>Market text<small>标记文本</small></h4></li>
+   				<li><h4>被删除的文本</h4><p>对于被删除的文本使用del标签</p></li>
+   				<li><h4>无用文本</h4><p>对于没有用的文本使用s标签</p></li>
+   				<li><h4>插入文本</h4><p>额外插入的文本使用ins标签</p></li>
+   				<li><h4>带下划线的文本</h4><p>为文本添加下划线使用u标签</p></li>
+   				<li><h4>小号文本</h4><p>对于不需要强调的文本，使用small包裹，文本字体大小将设置为父容器的字体大小的85%。</p></li>
+   				<li><h4>着重</h4><p>通过增加font-weight值强调文本使用strong标签。</p></li>
+   				<li><h4>斜体</h4><p>用斜体强调一段文本，使用em标签</p></li>
+   			</ul>
+   			<h4>对齐</h4><br> 
+   				<div class="container">
+					<p class="text-left">向左对齐</p>
+					<p class="text-center">文本居中</p>
+					<p class="text-right">向左对齐</p>
+					<p class="text-justify">改变字与字之间的间距使得每行对齐。</p>
+					<p class="text-nowrap">没有被包裹</p>
+				</div>
+   			<h4>改变大小写</h4><br>
+   				<div class="container">
+					<p class="text-lowercase">Lowercased text.</p>
+					<p class="text-uppercase">Uppercased text.</p>
+					<p class="text-capitalize">Capitallized text.</p>
+				</div>
+   			<h4>缩略语</h4><br>
+   			<ul>
+   				<li><p><strong>基本缩略语</strong></p></li>
+   				<li><p><strong>.initialism</strong>首字母缩略语</p></li>
+   					<abbr title="attribute">attr</abbr>	
+   					<abbr title="HyperText Markup Language" class="initialism">HTML</abbr>	
+   			</ul>
+   			<h4>地址(.address)</h4><br>
+   			<h4>引用(.blockquote或.blockquote-reverse)</h4><br>
+   		</li><br>
+   		
+   		<h3>列表</h3><br/>
+   		<ul>
+   			<li><h4>无样式列表(.list-unstyled)</h4></li><br>
+   			<li><h4>内联列表(.list-inline)</h4></li><br>
+   			<li><h4>描述(dl_dt_dd)</h4>
+   				<ul>
+   					<li><p>水平排列的描述(.dl-horizontal)</p></li>
+   					<li><p>自动截断(通过text-overflow属性)</p></li>
+   				</ul>
+   			</li><br>
+   		</ul>
+   		<h3>代码</h3><br/>
+   		<ul>
+   			<li><h4>内联代码(code标签)</h4></li><br>
+   			<li><h4>用户输入(kbd标签)</h4></li><br>
+   			<li><h4>代码块(pre标签，还可使用.pre-scrollable类设置max-height为350px.)</h4></li><br>
+   			<li><h4>变量(var标签标记变量)</h4></li><br>
+   			<li><h4>程序输出(samp标签)</h4></li><br>
+   		</ul>
+   		<h3>表格</h3><br/>
+   		<ul>
+   			<li><h4>基本实例(.table)</h4></li><br>
+   			<li><h4>条纹状表格(.table-striped)</h4></li><br>
+   			<li><h4>带边框的表格(.table-bordered)</h4></li><br>
+   			<li><h4>鼠标悬停(.table-hover)</h4></li><br>
+   			<li><h4>紧缩表格(.table-condesed)</h4></li><br>
+   		</ul>
+   		<h3>状态类</h3><br/>
+   		<ul>
+   			<li><h4>.active(鼠标悬停时的颜色)</h4></li><br>
+   			<li><h4>.success(标识成功或积极的动作)</h4></li><br>
+   			<li><h4>.info(标识普通的提示信息或动作)</h4></li><br>
+   			<li><h4>.warning(标识警告或需要用户注意)</h4></li><br>
+   			<li><h4>.danger(标识危险或潜在的带来负面影响的动作)</h4></li><br>
+   		</ul>
+   	</ul>
+   </div>
+
+</body>
+
+</html>
